@@ -1,12 +1,87 @@
 //====================================================================================================
-.text{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+.header {
+
+		/* .header__container */
+  padding-top: 50px;
+		&__container {
+		}
+
+		/* .header__wrapp */
+
+		&__wrapp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+		}
+
+		/* .header__logo */
+
+		&__logo {
+		}
+
+		/* .header__logo-img */
+
+		&__logo-img {
+		}
+
+		/* .header__menu */
+
+		&__menu {
+		}
+
+		/* .header__btn */
+
+		&__btn {
+      border: 1px solid #DB00F9;
+      border-radius: 100px;
+      padding: 19px 24px;
+      font-size: 18px;
+		}
 }
+.menu {
+
+		/* .menu__body */
+
+		&__body {
+		}
+
+		/* .menu__list */
+
+		&__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+		}
+
+		/* .menu__item */
+
+		&__item {
+		}
+
+		/* .menu__link */
+
+		&__link {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: left;
+		}
+
+		/* .menu__icon */
+
+		&__icon {
+		}
+}
+
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -25,7 +100,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: #fff;
 		}
 		&::before {
 			top: 0;
@@ -54,4 +129,4 @@
 		}
 	}
 }
-*/
+
