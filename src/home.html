@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-        
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		<!-- @@include('html/_popup.htm',{}) -->
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <div class="main">
+          <div class="main__container">
+            <div class="main__wrapp">
+              <div class="main__top">
+                <h1 class="main__title"><span>Pink</span><br />Hunter</h1>
+                <p class="main__description">
+                  Подбор талантов, которые делают результаты. Наши кандидаты -
+                  залог вашего успеха в мире<br />
+                  Affiliate marketing
+                </p>
+                <button class="main__btn">OWNER</button>
+              </div>
+              <div class="main__buttom">
+                <ul class="main__buttom-wrapp">
+                  <li class="main__item">
+                    <a href="#" class="main__link">Telegram</a>
+                    <a href="#" class="main__link">Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    <!-- @@include('html/_popup.htm',{}) -->
+    @@include('html/_js.htm',{})
+  </body>
 </html>

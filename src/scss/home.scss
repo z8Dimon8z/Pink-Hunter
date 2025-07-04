@@ -1,5 +1,133 @@
 //====================================================================================================
-.wrapper{
-  
+.wrapper {
 }
+.page {
+}
+.main {
+  // .main__container
+  background-image: url("@img/main-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 316px;
+    height: 316px;
+    background-image: url("@img/decoretion/main-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 254px;
+    height: 254px;
+    background-image: url("@img/decoretion/main-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  &__container {
+  }
+
+  // .main__wrapp
+
+  &__wrapp {
+    padding-top: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .main__top
+
+  &__top {
+    text-align: center;
+    margin-bottom: 180px;
+  }
+
+  // .main__title
+
+  &__title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 220px;
+    font-weight: 700;
+    line-height: 160px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    span {
+      color: rgb(219, 0, 249);
+      font-family: Montserrat;
+      font-size: 220px;
+      font-weight: 700;
+      line-height: 160px;
+      letter-spacing: 0%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  // .main__description
+
+  &__description {
+    max-width: 630px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-family: Evolventa;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  // .main__btn
+
+  &__btn {
+    padding: 20px 158px;
+    box-sizing: border-box;
+    border: 1px solid rgb(219, 0, 249);
+    border-radius: 100px;
+  }
+
+  // .main__buttom
+
+  &__buttom {
+  }
+
+  // .main__buttom-wrapp
+
+  &__buttom-wrapp {
+  }
+
+  // .main__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  // .main__link
+
+  &__link {
+    display: block;
+  }
+}
+
 //====================================================================================================
