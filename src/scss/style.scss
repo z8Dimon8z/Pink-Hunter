@@ -50,6 +50,7 @@ $responsiveType: 1;
 
 body {
 	color: $mainColor;
+  background-color: #1B1B1B;
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
