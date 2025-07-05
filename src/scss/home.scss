@@ -1,8 +1,5 @@
 //====================================================================================================
-.wrapper {
-}
-.page {
-}
+// Главный Экран
 .main {
   // .main__container
   background-image: url("@img/main-bg.png");
@@ -21,6 +18,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
+    @media (max-width: em(1133)) {
+      display: none;
+    }
   }
 
   &::before {
@@ -34,15 +34,15 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
-  }
-
-  &__container {
+    @media (max-width: em(983)) {
+      display: none;
+    }
   }
 
   // .main__wrapp
 
   &__wrapp {
-    padding-top: 132px;
+    @include adaptiveValue("padding-top", 132, 66);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,6 +54,7 @@
   &__top {
     text-align: center;
     margin-bottom: 180px;
+    @include adaptiveValue("margin-bottom", 180, 100);
   }
 
   // .main__title
@@ -61,19 +62,19 @@
   &__title {
     color: rgb(255, 255, 255);
     font-family: Montserrat;
-    font-size: 220px;
+    @include adaptiveValue("font-size", 220, 60);
     font-weight: 700;
-    line-height: 160px;
+    @include adaptiveValue("line-height", 160, 73);
     letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    @include adaptiveValue("margin-bottom", 30, 15);
     span {
       color: rgb(219, 0, 249);
       font-family: Montserrat;
-      font-size: 220px;
+      @include adaptiveValue("font-size", 220, 60);
       font-weight: 700;
-      line-height: 160px;
+      @include adaptiveValue("line-height", 160, 73);
       letter-spacing: 0%;
       text-align: center;
       text-transform: uppercase;
@@ -87,31 +88,54 @@
     margin: 0 auto;
     color: rgb(255, 255, 255);
     font-family: Evolventa;
-    font-size: 24px;
+    @include adaptiveValue("font-size", 24, 16);
     font-weight: 700;
+    @include adaptiveValue("line-height", 32, 21);
     line-height: 32px;
     letter-spacing: 0%;
     text-align: center;
     margin-bottom: 50px;
+    @include adaptiveValue("margin-bottom", 50, 25);
+    @media (max-width: em(400)) {
+      max-width: 320px;
+    }
+  }
+
+  .main__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: em(1024)) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   // .main__btn
 
   &__btn {
-    padding: 20px 158px;
+    @include adaptiveValue("padding-top", 20, 19);
+    @include adaptiveValue("padding-bottom", 20, 19);
+    @include adaptiveValue("padding-left", 100, 79);
+    @include adaptiveValue("padding-right", 100, 79);
     box-sizing: border-box;
     border: 1px solid rgb(219, 0, 249);
     border-radius: 100px;
+    width: 320px;
   }
 
-  // .main__buttom
-
-  &__buttom {
-  }
-
-  // .main__buttom-wrapp
-
-  &__buttom-wrapp {
+  .main__btn-color {
+    background: rgb(219, 0, 249);
+    display: none;
+    @media (max-width: em(1024)) {
+      display: block;
+      font-size: 14px;
+      @include adaptiveValue("padding-top", 20, 19);
+      @include adaptiveValue("padding-bottom", 20, 19);
+      @include adaptiveValue("padding-left", 100, 79);
+      @include adaptiveValue("padding-right", 100, 79);
+      width: 320px;
+    }
   }
 
   // .main__item
@@ -127,6 +151,15 @@
 
   &__link {
     display: block;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    opacity: 0.5;
   }
 }
 

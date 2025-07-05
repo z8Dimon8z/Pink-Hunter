@@ -1,13 +1,8 @@
+// Шапка сайта
 .header {
-
   /* .header__top */
- 
-padding-top: 27px;
 
-
-  /* .header__container */
-
-  &__container {}
+  padding-top: 27px;
 
   /* .header__wrapp */
 
@@ -16,8 +11,6 @@ padding-top: 27px;
     align-items: center;
     justify-content: space-between;
   }
-
-
 
   &__buttom {
     padding-top: 5px;
@@ -34,12 +27,7 @@ padding-top: 27px;
 
   &__logo {
     z-index: 10;
-    
   }
-
-  /* .header__logo-img */
-
-  &__logo-img {}
 
   /* .header__menu */
 
@@ -61,14 +49,14 @@ padding-top: 27px;
       top: 0;
       left: -100%;
       transition: left 0.3s ease 0s;
-      background-color: #1B1B1B;
+      background-color: #1b1b1b;
       @include adaptiveValue("padding-top", 108, 100);
       padding-bottom: rem(30);
       padding-right: rem(15);
       padding-left: rem(15);
       z-index: 5;
 
-     .menu-open & {
+      .menu-open & {
         left: 0;
 
         &::before {
@@ -76,62 +64,48 @@ padding-top: 27px;
         }
       }
     }
+
+    /* .header__btn */
   }
-
-
-  /* .header__btn */
-
   &__btn {
     padding: 13px 34px;
-    border: 1px solid #DB00F9;
+    border: 1px solid #db00f9;
     border-radius: 50px;
 
     @media (max-width: em(1034)) {
       display: none;
     }
-
   }
+}
 
-  .menu {
+.menu {
+  /* .menu__icon */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
 
-    /* .menu__icon */
+  /* .menu__list */
+
+  &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
-    font-weight: 400;
-
-    &__icon {}
-
-    /* .menu__body */
-
-    &__body {}
-
-    /* .menu__list */
-
-    &__list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 48px;
-      @media (max-width: em(840)){
-         flex-direction: column;
-         gap:20px;
-         color: white; 
-      }
+    gap: 48px;
+    @media (max-width: em(840)) {
+      flex-direction: column;
+      gap: 20px;
+      color: white;
     }
+  }
 
-    /* .menu__item */
+  /* .menu__link */
 
-    &__item {}
-
-    /* .menu__link */
-
-    &__link {
-      transition: all 0.3s;
-      &:hover{
-        color: black;
-      }
+  &__link {
+    transition: all 0.3s;
+    &:hover {
+      color: black;
     }
   }
 }
@@ -179,9 +153,6 @@ padding-top: 27px;
       span {
         width: 0;
       }
-
-      &::before,
-      &::after {}
 
       &::before {
         top: calc(50% - rem(1));

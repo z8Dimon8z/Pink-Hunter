@@ -1,2 +1,3 @@
 # Pink-Hunter
-Pink Hunter найм людей ноябрь 2024
+
+Pink Hunter найм людей июль 2025
