@@ -164,3 +164,80 @@
 }
 
 //====================================================================================================
+// сверстал искуственый интелект
+$black: #0d0d0d;
+$white: #ffffff;
+$pink: #ff00b7;
+$gray: #999;
+
+.about,
+.benefits,
+.contact,
+.affiliate {
+  padding: 100px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 36px;
+
+    span {
+      color: $pink;
+    }
+  }
+
+  p {
+    color: $gray;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+
+  .benefit {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+
+  input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+// Адаптив
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .nav {
+    display: none;
+  }
+}
