@@ -1,3 +1,63 @@
 //====================================================================================================
+// Footer
+.footer {
+  padding: 100px 0;
+  position: relative;
 
+  &__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    margin: 30px auto;
+    padding: 15px 40px;
+    border: 1px solid #d600ff;
+    border-radius: 50px;
+    color: #d600ff;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+
+    &:hover {
+      background: #d600ff;
+      color: #000;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+
+  .social-item {
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+
+    p:nth-child(2) {
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
 //====================================================================================================
